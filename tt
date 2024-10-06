@@ -1,0 +1,20 @@
+ sudo systemctl restart docker
+ sudo ufw disable
+curl http://127.0.0.1:8080
+ sudo docker run -it -v $(pwd):/data -p 8080:80 --network host maptiler/tileserver-gl
+
+
+
+ sudo docker run -it -v $(pwd):/data -p 8080:80 maptiler/tileserver-gl --verbosess
+
+ sudo ufw allow 8080
+
+docker build -t tileserver .
+
+ wget https://github.com/maptiler/tileserver-gl/releases/download/v1.3.0/zurich_switzerland.mbtiles
+
+https://youtu.be/Ucg5Zqm9ZMk?si=CWEVbMHI-uccnoj_
+
+https://youtu.be/drBKVbOmPEk?si=9rY__OTgDC7mcGps
+
+sudo dpkg -i sdkmanager_2.1.0-11698_amd64.debs
